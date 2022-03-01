@@ -1,0 +1,34 @@
+#N canvas 0 50 361 416 10;
+#X obj 44 218 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 128 202 5 0 0 0 - - -, f 5;
+#X floatatom 54 81 5 0 0 0 - - -, f 5;
+#X obj 43 129 sel 0;
+#X obj 42 152 t b f;
+#X obj 53 32 inlet;
+#X obj 93 356 outlet~;
+#N canvas 0 50 450 300 (subpatch) 0;
+#X array \$0-rim 17839 float 2;
+#X coords 0 1 17839 -1 50 35 1 0 0;
+#X restore 193 22 graph;
+#X obj 160 83 loadbang;
+#X obj 193 103 f \$0;
+#X obj 153 169 soundfiler;
+#X msg 143 128 read -resize snare-rim.wav \$1-rim;
+#X obj 12 248 tabplay~ \$0-rim;
+#X obj 243 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 104 288 *~ 1;
+#X connect 0 0 12 0;
+#X connect 1 0 14 1;
+#X connect 2 0 3 0;
+#X connect 3 1 4 0;
+#X connect 4 0 0 0;
+#X connect 4 1 1 0;
+#X connect 5 0 2 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 11 0 10 0;
+#X connect 12 0 14 0;
+#X connect 13 0 9 0;
+#X connect 14 0 6 0;

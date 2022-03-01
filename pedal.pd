@@ -1,0 +1,37 @@
+#N canvas 0 0 361 416 10;
+#X obj 44 218 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 128 202 5 0 0 0 - - -;
+#X floatatom 54 81 5 0 0 0 - - -;
+#X obj 43 129 sel 0;
+#X obj 42 152 t b f;
+#X obj 53 32 inlet;
+#X obj 93 356 outlet~;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array \$0-pedal 27074 float 2;
+#X coords 0 1 27074 -1 100 70 1 0 0;
+#X restore 220 274 graph;
+#X obj 160 83 loadbang;
+#X obj 193 103 f \$0;
+#X obj 153 169 soundfiler;
+#X obj 243 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 104 288 *~ 1.3;
+#X msg 119 133 read -resize hihat-pedal.wav \$1-pedal;
+#X obj 12 248 tabplay~ \$0-pedal;
+#X msg 13 181 0.05;
+#X connect 0 0 14 0;
+#X connect 1 0 12 1;
+#X connect 2 0 3 0;
+#X connect 3 1 4 0;
+#X connect 4 0 0 0;
+#X connect 4 1 1 0;
+#X connect 5 0 2 0;
+#X connect 8 0 9 0;
+#X connect 9 0 13 0;
+#X connect 11 0 9 0;
+#X connect 12 0 6 0;
+#X connect 13 0 10 0;
+#X connect 14 0 12 0;
+#X connect 15 0 1 0;
+#X connect 15 0 0 0;

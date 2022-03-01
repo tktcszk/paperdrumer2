@@ -1,0 +1,155 @@
+#N canvas 0 50 1051 668 10;
+#X obj 63 42 inlet;
+#X obj 159 507 outlet~;
+#X obj 429 220 soundfiler;
+#X obj 429 122 f \$0;
+#X obj 466 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 307 29 table \$0-tom1_forte_L;
+#X obj 313 53 table \$0-tom1_L;
+#X obj 318 76 table \$0-tom1_piano_L;
+#X obj 458 27 table \$0-tom1_forte_R;
+#X obj 464 51 table \$0-tom1_R;
+#X obj 469 73 table \$0-tom1_piano_R;
+#X msg 429 147 read -resize high_tom_f.wav \$1-tom1_forte_R \, read
+-resize high_tom_m.wav \$1-tom1_R \, read -resize high_tom_p.wav \$1-tom1_piano_R
+\, read -resize high_tom_f.wav \$1-tom1_forte_L \, read -resize high_tom_m.wav
+\$1-tom1_L \, read -resize high_tom_p.wav \$1-tom1_piano_L;
+#X floatatom 146 141 5 0 0 0 - - -;
+#X floatatom 67 71 5 0 0 0 - - -;
+#X obj 68 95 sel 0;
+#X obj 200 170 moses 0.666;
+#X obj 40 314 *~ 0.5;
+#X obj 56 148 moses 0.28;
+#X obj 167 346 *~ 0.5;
+#X obj 295 409 *~ 0.5;
+#X obj 49 362 +~;
+#X obj 158 407 +~;
+#X obj 29 261 tabplay~ \$0-tom1_piano_L;
+#X obj 181 288 tabplay~ \$0-tom1_L;
+#X obj 295 348 tabplay~ \$0-tom1_forte_L;
+#X obj 58 117 t b f;
+#X obj 10 282 tabplay~ \$0-tom1_piano_R;
+#X obj 15 197 counter 0 0 1;
+#X obj 13 217 sel 0;
+#X obj 14 238 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 36 238 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 192 309 tabplay~ \$0-tom1_R;
+#X obj 184 203 counter 0 0 1;
+#X obj 182 223 sel 0;
+#X obj 183 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 205 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 329 229 counter 0 0 1;
+#X obj 327 249 sel 0;
+#X obj 328 270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 350 270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 651 227 loadbang;
+#X msg 374 321 3;
+#X obj 301 375 tabplay~ \$0-tom1_forte_R;
+#X floatatom 362 443 5 0 0 0 - - -;
+#X msg 240 264 2;
+#X msg 111 228 1;
+#X obj 352 407 / 1;
+#X obj 66 545 noteout 10;
+#X obj 73 462 t b f;
+#X obj 67 489 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 66 545 noteout 10;
+#X obj 73 462 t b f;
+#X floatatom 119 519 5 0 0 0 - - -;
+#X obj 52 433 * 127;
+#X msg 70 515 38;
+#X obj 463 252 f \$0;
+#X obj 500 225 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 463 277 read -resize high_tom_f2.wav \$1-tom1_forte_R \, read
+-resize high_tom_m2.wav \$1-tom1_R \, read -resize high_tom_p2.wav
+\$1-tom1_piano_R \, read -resize high_tom_f2.wav \$1-tom1_forte_L \,
+read -resize high_tom_m2.wav \$1-tom1_L \, read -resize high_tom_p2.wav
+\$1-tom1_piano_L;
+#X msg 111 189 stop;
+#X msg 277 226 stop;
+#X obj 30 511 s t1;
+#X obj 238 457 * 1.2;
+#X obj 149 448 *~ 1;
+#X floatatom 238 478 5 0 0 0 - - -;
+#X connect 0 0 13 0;
+#X connect 3 0 11 0;
+#X connect 4 0 3 0;
+#X connect 11 0 2 0;
+#X connect 12 0 46 0;
+#X connect 12 0 53 0;
+#X connect 13 0 14 0;
+#X connect 14 1 25 0;
+#X connect 15 0 18 1;
+#X connect 15 0 32 0;
+#X connect 15 0 58 0;
+#X connect 15 1 36 0;
+#X connect 15 1 59 0;
+#X connect 16 0 20 0;
+#X connect 17 0 16 1;
+#X connect 17 0 27 0;
+#X connect 17 1 15 0;
+#X connect 18 0 20 1;
+#X connect 19 0 21 1;
+#X connect 20 0 21 0;
+#X connect 21 0 62 0;
+#X connect 22 0 16 0;
+#X connect 23 0 18 0;
+#X connect 24 0 19 0;
+#X connect 25 1 12 0;
+#X connect 25 1 17 0;
+#X connect 26 0 16 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X connect 28 1 30 0;
+#X connect 29 0 26 0;
+#X connect 29 0 45 0;
+#X connect 30 0 22 0;
+#X connect 30 0 45 0;
+#X connect 31 0 18 0;
+#X connect 32 0 33 0;
+#X connect 33 0 34 0;
+#X connect 33 1 35 0;
+#X connect 34 0 23 0;
+#X connect 34 0 44 0;
+#X connect 35 0 31 0;
+#X connect 35 0 44 0;
+#X connect 36 0 37 0;
+#X connect 37 0 38 0;
+#X connect 37 1 39 0;
+#X connect 38 0 24 0;
+#X connect 38 0 41 0;
+#X connect 39 0 42 0;
+#X connect 39 0 41 0;
+#X connect 40 0 56 0;
+#X connect 41 0 46 1;
+#X connect 42 0 19 0;
+#X connect 44 0 46 1;
+#X connect 45 0 41 0;
+#X connect 46 0 43 0;
+#X connect 46 0 61 0;
+#X connect 48 0 49 0;
+#X connect 48 1 52 0;
+#X connect 49 0 54 0;
+#X connect 49 0 60 0;
+#X connect 52 0 47 1;
+#X connect 53 0 48 0;
+#X connect 54 0 47 0;
+#X connect 55 0 57 0;
+#X connect 56 0 55 0;
+#X connect 57 0 2 0;
+#X connect 58 0 22 0;
+#X connect 58 0 26 0;
+#X connect 59 0 23 0;
+#X connect 59 0 31 0;
+#X connect 59 0 58 0;
+#X connect 61 0 62 1;
+#X connect 61 0 63 0;
+#X connect 62 0 1 0;

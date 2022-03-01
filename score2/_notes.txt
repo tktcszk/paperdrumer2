@@ -1,0 +1,30 @@
+### C majar      (void song)
+notes=E=52;F=53;G=55;A=57;B=59;C=60;D=62;e=64;f=65;g=67;a=69;b=71;c=72;d=74
+### E-flat majar (pool-me-alone)
+notes=E=51;F=53;G=55;A=56;B=58;C=60;D=62;e=63=f=65;g=67;a=68;b=70;c=72;d=74
+### D majar      (kozue,lakeside2,maki
+notes=E=52;F=54;G=55;A=57;B=59;C=61;D=62;e=64;f=66;g=67;a=69;b=71;c=73;d=74
+### G majar      (
+notes=E=52;F=54;G=55;A=57;B=59;C=60;D=62;e=64;f=66;g=67;a=69;b=71;c=72;d=74
+
+#config;
+bpm=129
+parts=kick,snare1,snare2,hihat1,hihat2,tom1,tom2,floor,clash,ride,rim,pedal,note,bend_depths,modulations,bpm,unit,note2,note3
+chars=X=12;Y=24;Z=36;0=0;1=0.1;2=0.2;3=0.3;4=0.4;5=0.5;6=0.6;7=0.7;8=0.8;9=0.9;-=0;^=0.1;`=0.13;_=0;*=0.6;+=0.2
+
+### C majar      (void song)
+notes=E=52;F=53;G=55;A=57;B=59;C=60;D=62;e=64;f=65;g=67;a=69;b=71;c=72;d=74
+### E-flat majar (pool-me-alone)
+notes=E=51;F=53;G=55;A=56;B=58;C=60;D=62;e=63=f=65;g=67;a=68;b=70;c=72;d=74
+### D majar      (kozue,lakeside2,maki
+notes=E=52;F=54;G=55;A=57;B=59;C=61;D=62;e=64;f=66;g=67;a=69;b=71;c=73;d=74
+### G majar      (
+notes=E=52;F=54;G=55;A=57;B=59;C=60;D=62;e=64;f=66;g=67;a=69;b=71;c=72;d=74
+
+
+
+volumes=1=1;2=16;3=31;4=46;5=61;6=76;7=91;8=106;9=127;-=61
+bend_depths=-=0;z=-8191;y=-2047;x=-511;w=-127;0=0;a=128;b=512;c=2048;d=8192;>=>
+modulations=0=0;1=1;2=16;3=31;4=46;5=61;6=76;7=91;8=106;9=127;-=0
+#end;
+
