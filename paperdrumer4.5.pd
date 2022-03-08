@@ -1,5 +1,5 @@
-#N canvas 51 12 1543 739 10;
-#X obj 6 121 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+#N canvas 50 12 1544 739 10;
+#X obj 6 121 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
 #N canvas 0 50 1280 637 metronome 0;
 #X obj 84 120 metro 100;
@@ -306,7 +306,7 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X obj 241 597 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
 -262144 -1 -1 0 1;
 #X obj 558 629 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
--262144 -1 -1 1550 1;
+-262144 -1 -1 0 1;
 #X obj 353 527 vsl 15 32 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 366 652 vsl 15 32 0 127 0 0 empty empty empty 0 -9 0 10 -262144
@@ -363,10 +363,9 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X obj 1219 482 noteout 7, f 13;
 #X obj 457 515 - 24;
 #X msg 538 8 read no_title_song_data2.txt cr \, rewind;
-#X msg 808 122 read gake_data2.txt cr \, rewind;
+#X msg 814 145 read gake_data2.txt cr \, rewind;
 #X msg 821 194 read train_song_data2.txt cr \, rewind;
 #X msg 820 38 read december_data2.txt cr \, rewind;
-#X msg 821 80 read at_lakeside_data2.txt cr \, rewind;
 #X obj 117 10 key;
 #X obj 126 86 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -374,11 +373,12 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X obj 217 7 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 251 8 sel 97 32 49 50 51 52 53 54 55 56 57 58 59;
-#X msg 807 141 read tower_song_data2.txt cr \, rewind;
-#X msg 806 159 read tsuta_song_data2.txt cr \, rewind;
-#X msg 820 16 read etude_data2.txt cr \, rewind;
+#X msg 813 164 read tower_song_data2.txt cr \, rewind;
+#X msg 823 83 read tsuta_song_data2.txt cr \, rewind;
 #X msg 821 61 read primrose_day_data2.txt cr \, rewind;
-#X msg 825 99 read at_lakeside1_data2.txt cr \, rewind;
+#X msg 831 122 read at_lakeside1_data2.txt cr \, rewind;
+#X msg 827 103 read at_lakeside2_data2.txt cr \, rewind;
+#X msg 820 16 read etude_song_data2.txt cr \, rewind;
 #X connect 0 0 1 0;
 #X connect 1 0 16 0;
 #X connect 2 0 3 0;
@@ -655,26 +655,30 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X connect 187 0 3 0;
 #X connect 188 0 45 0;
 #X connect 188 0 3 0;
-#X connect 189 0 45 0;
-#X connect 189 0 3 0;
-#X connect 190 0 192 0;
-#X connect 191 0 0 0;
-#X connect 192 0 194 0;
-#X connect 193 0 192 1;
-#X connect 194 0 4 0;
-#X connect 194 1 191 0;
-#X connect 194 2 145 0;
-#X connect 194 3 85 0;
-#X connect 194 4 107 0;
-#X connect 194 5 110 0;
-#X connect 194 6 108 0;
-#X connect 194 7 84 0;
-#X connect 194 8 106 0;
-#X connect 194 9 109 0;
-#X connect 194 10 111 0;
-#X connect 195 0 45 0;
+#X connect 189 0 191 0;
+#X connect 190 0 0 0;
+#X connect 191 0 193 0;
+#X connect 192 0 191 1;
+#X connect 193 0 4 0;
+#X connect 193 1 190 0;
+#X connect 193 2 145 0;
+#X connect 193 3 85 0;
+#X connect 193 4 107 0;
+#X connect 193 5 110 0;
+#X connect 193 6 108 0;
+#X connect 193 7 84 0;
+#X connect 193 8 106 0;
+#X connect 193 9 109 0;
+#X connect 193 10 111 0;
+#X connect 194 0 45 0;
+#X connect 194 0 3 0;
 #X connect 195 0 3 0;
+#X connect 195 0 45 0;
 #X connect 196 0 3 0;
 #X connect 196 0 45 0;
-#X connect 198 0 3 0;
+#X connect 197 0 3 0;
+#X connect 197 0 45 0;
 #X connect 198 0 45 0;
+#X connect 198 0 3 0;
+#X connect 199 0 3 0;
+#X connect 199 0 48 0;
