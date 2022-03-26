@@ -1,5 +1,5 @@
 #N canvas 50 12 1544 739 10;
-#X obj 6 121 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 6 121 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #N canvas 0 50 1280 637 metronome 0;
 #X obj 84 120 metro 100;
@@ -306,7 +306,7 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X obj 241 597 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
 -262144 -1 -1 0 1;
 #X obj 558 629 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1550 1;
 #X obj 353 527 vsl 15 32 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 366 652 vsl 15 32 0 127 0 0 empty empty empty 0 -9 0 10 -262144
@@ -379,6 +379,7 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X msg 831 122 read at_lakeside1_data2.txt cr \, rewind;
 #X msg 827 103 read at_lakeside2_data2.txt cr \, rewind;
 #X msg 820 16 read etude_song_data2.txt cr \, rewind;
+#X msg 527 32 read paranoid_data2.txt cr \, rewind;
 #X connect 0 0 1 0;
 #X connect 1 0 16 0;
 #X connect 2 0 3 0;
@@ -682,3 +683,5 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X connect 198 0 3 0;
 #X connect 199 0 3 0;
 #X connect 199 0 48 0;
+#X connect 200 0 3 0;
+#X connect 200 0 48 0;
