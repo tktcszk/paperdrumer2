@@ -322,10 +322,10 @@ a----------------------b---c----d-------------------------------
 #end;
 
 
-#!intro3
-#!verse<mae1>
-#!verse<ato1>
-#!verse<mae2>
+###!intro3
+###!verse<mae1>
+###!verse<ato1>
+###!verse<mae2>
 
 
 #!click
