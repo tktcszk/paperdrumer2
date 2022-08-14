@@ -1,4 +1,4 @@
-#N canvas 145 107 989 664 10;
+#N canvas 145 88 1100 730 10;
 #X floatatom 544 525 5 0 0 0 - - -;
 #X obj 308 490 makenote 60 10 4000;
 #X msg 698 518 1;
@@ -90,7 +90,7 @@
 -1 -1 0 1;
 #X obj 135 144 ctlout 1 17;
 #X obj 49 239 vsl 15 128 0 127 0 0 empty empty lead-modu 0 -9 0 10
--262144 -1 -1 1000 1;
+-262144 -1 -1 0 1;
 #X obj 84 328 ctlout 12 1;
 #X msg 155 52 0;
 #X msg 652 517 17;
@@ -153,6 +153,12 @@
 -1 -1;
 #X obj 348 172 ctlout 7 17;
 #X obj 373 116 ctlout 11 1;
+#X obj 759 56 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 700 1;
+#X obj 761 123 bendout 4;
+#X obj 762 144 bendout 5;
+#X obj 764 163 bendout 6;
+#X floatatom 731 100 5 0 0 0 - - -;
 #X connect 0 0 48 0;
 #X connect 1 0 0 0;
 #X connect 1 1 48 1;
@@ -312,3 +318,7 @@
 #X connect 115 0 114 0;
 #X connect 116 0 1 0;
 #X connect 117 0 113 0;
+#X connect 120 0 124 0;
+#X connect 124 0 121 0;
+#X connect 124 0 122 0;
+#X connect 124 0 123 0;

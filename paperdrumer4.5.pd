@@ -303,9 +303,9 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X obj 1175 657 noteout 34;
 #X obj 170 545 noteout 17;
 #X obj 241 597 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
--262144 -1 -1 1550 1;
+-262144 -1 -1 0 1;
 #X obj 558 629 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
--262144 -1 -1 1550 1;
+-262144 -1 -1 0 1;
 #X obj 353 527 vsl 15 32 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 366 652 vsl 15 32 0 127 0 0 empty empty empty 0 -9 0 10 -262144
@@ -369,7 +369,7 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X obj 126 86 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 155 6 spigot;
-#X obj 217 7 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 217 7 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 251 8 sel 97 32 49 50 51 52 53 54 55 56 57 58 59;
 #X msg 813 164 read tower_song_data2.txt cr \, rewind;
@@ -383,11 +383,19 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X obj 598 702 ctlout 7 17;
 #X obj 588 681 ctlout 11 1;
 #X obj 665 633 vsl 15 32 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 465 1;
+-1 -1 0 1;
 #X obj 621 663 *;
 #X floatatom 693 684 5 0 0 0 - - -;
 #X floatatom 691 709 5 0 0 0 - - -;
 #X msg 689 629 0.15;
+#X obj 1298 544 vsl 15 32 -8191 8192 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 1300 611 bendout 4;
+#X obj 1301 632 bendout 5;
+#X obj 1303 651 bendout 6;
+#X floatatom 1270 588 8 0 0 0 - - -;
+#X msg 1336 524 0;
+#X msg 1326 514 -256;
 #X connect 0 0 1 0;
 #X connect 1 0 16 0;
 #X connect 2 0 3 0;
@@ -700,3 +708,9 @@ f f f f f f f f f f f f f f f f f, f 156;
 #X connect 204 0 202 0;
 #X connect 204 0 206 0;
 #X connect 207 0 203 0;
+#X connect 208 0 212 0;
+#X connect 212 0 209 0;
+#X connect 212 0 210 0;
+#X connect 212 0 211 0;
+#X connect 213 0 208 0;
+#X connect 214 0 208 0;
