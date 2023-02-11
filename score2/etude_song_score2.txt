@@ -4,12 +4,11 @@ bpm=77
 parts=bpm,unit,kick,snare1,snare2,hihat1,hihat2,pedal,tom1,tom2,floor,clash,ride,rim,note1,bend1,modu1,vibr1,note2,bend2,modu2,note3,note4,note5,note6,damp,note7,note8,note9
 chars=X=16;Y=24;Z=32;0=0;1=0.1;2=0.18;3=0.2;4=0.28;5=0.48;6=0.67;7=0.7;8=0.8;9=0.9;-=0;*=0.9;+=0.8;p=78;q=75;r=72;s=68
 notes=E=52;F=54;G=55;A=57;B=59;C=61;D=62;e=64;f=66;g=67;a=69;b=71;c=73;d=74
-volumes=1=1;2=16;3=31;4=46;5=61;6=76;7=91;8=106;9=127;-=61
+volumes=1=1;2=16;3=31;4=46;5=61;6=76;7=91;8=106;9=127;-=127
 bend_depths=-=0;z=-8191;y=-2047;x=-511;w=-127;0=0;a=128;b=512;c=2048;d=8192;>=>
 modulations=0=0;1=1;2=16;3=31;4=46;5=61;6=76;7=91;8=106;9=127;-=0
 articulations=S=32;-=20;L=-100
 #end;
-
 
 #?click;unit=X;parts=pedal,unit,note1,temp1
 --*---*---*---*-
@@ -18,7 +17,7 @@ X---------------
 ----------------
 #end;
 
-#?A-01;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2
+#?A-01;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2,note9,temp9
 --------------------------------------------------------------------------------------------------------------------------------
 --*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+-
 --------------------------------------------------------------------------------------------------------------------------------
@@ -43,9 +42,11 @@ _-------_-------_-------_-------_-------_-------_-------_-------_-------_-------
 --------------------------------------------------------------------------------------------------------------------------------
 DDDDAADD-DDDAADDDDDDAADD-DDDAADDEEEEGGEE-EEEGGCCEEEEGGEE-EEEGGCCDDDDAADD-DDDAADDDDDDAADD-DDDAADDEEEEGGEE-EEEGGCCEEEEGGEE-EEEFGAA
 ------------------------------------------------------------------------------------------------------------------------------->
+ffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeeeffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeee
+--------------------------------------------------------------------------------------------------------------------------------
 #end;
 
-#?B-01;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2
+#?B-01;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2,note9,temp9
 --------------------------------------------------------------------------------------------------------------------------------
 --*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+-
 --------------------------------------------------------------------------------------------------------------------------------
@@ -70,9 +71,11 @@ _-------_-------_-------_-------_-------_-------_-------_-------_-------_-------
 --------------------------------------------------------------------------------------------------------------------------------
 BBBBFFBB-BBBFFBBBBBBFFBB-BBBB>A>AAAAeeAA-AAAeeAAAAAAeeAA-AAAeAAABBBBFFBB-BBBFFBBBBBBFFBB-BBBB>A>AAAAeeAA-AAAeeAA----------------
 ------------------------------>-------------------------------->------------------------------>---------------------------------
+ffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeeeffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeee
+--------------------------------------------------------------------------------------------------------------------------------
 #end;
 
-#?A-02;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2
+#?A-02;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2,note9,temp9
 --------------------------------------------------------------------------------------------------------------------------------
 --*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+-
 --------------------------------------------------------------------------------------------------------------------------------
@@ -97,9 +100,11 @@ _-------_-------_-------_-------_-------_-------_-------_-------_-------_-------
 --------------------------------------------------------------------------------------------------------------------------------
 DDDDAADD-DDDAADDDDDDAADD-DDDAADDEEEEGGEE-EEEGGCCEEEEGGEE-EEEGGCCDDDDAADD-DDDAADDDDDDAADD-DDDAADDEEEEGGEE-EEEGGCCEEEEGGEE-EEEFGAA
 ------------------------------------------------------------------------------------------------------------------------------->
+ffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeeeffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeee
+--------------------------------------------------------------------------------------------------------------------------------
 #end;
 
-#?B-02;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2
+#?B-02;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2,note9,temp9
 --------------------------------------------------------------------------------------------------------------------------------
 --*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+-
 --------------------------------------------------------------------------------------------------------------------------------
@@ -124,9 +129,11 @@ _-------_-------_-------_-------_-------_-------_-------_-------_-------_-------
 --------------------------------------------------------------------------------------------------------------------------------
 BBBBFFBB-BBBFFBBBBBBFFBB-BBBB>A>AAAAeeAA-AAAeeAAAAAAeeAA-AAAeAAABBBBFFBB-BBBFFBBBBBBFFBB-BBBB>A>AAAAeeAA-AAAeeAA----------------
 ------------------------------>-------------------------------->------------------------------>---------------------------------
+ffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeeeffffccccaaaaeeeeffffccccaaaaeeeeccccggggbbbbeeeeccccggggbbbbeeee
+--------------------------------------------------------------------------------------------------------------------------------
 #end;
 
-#?verse;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2
+#?verse;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2,note9,temp9
 --------------------------------------------------------------------------------------------------------------------------------
 --*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+---*---+-
 --------------------------------------------------------------------------------------------------------------------------------
@@ -151,6 +158,8 @@ _-------_-------_-------_-------_-------_-------_-------_-------_-------_-------
 --------------------------------------------------------------------------------------------------------------------------------
 DDDDg>DD-DDDggDDCCCCAACC-CCCAACCDDDDffDD-DDDffDDBBBBDDBB-FFFAAFFDDDDg>DD-DDDggDDCCCCAACC-CCCAACCDDDDffDD-DDDffDDAAAAeeAA-AAAeeAA
 --------------------------------------------------------------------------------------------------------------------------------
+ddddeeeeggggDDDDCCCCeeeeggggbbbbcccceeeeaaaaccccaaaaccccddddffffddddeeeeggggDDDDCCCCeeeeggggbbbbcccceeeeaaaaccccaaaaccccddddffff
+----------------------------<<<<------------------------------------------------------------------------------------------------
 #end;
 
 #?fin;unit=X;parts=clash,pedal,tom1,tom2,floor,rim,kick,unit,note1,temp1,note3,temp3,velo3,note4,temp4,velo4,note5,temp5,velo5,note6,temp6,velo6,note2,temp2
